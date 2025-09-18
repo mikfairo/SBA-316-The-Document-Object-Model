@@ -37,4 +37,5 @@ questionHeader.textContent= triviaSet[questionInput];//to change the text inside
 const questionDiv =document.getElementById('main-div');
 questionDiv.appendChild(questionHeader);
 
-
+const questionCard =document.getElementById('question-card');
+// questionCard.appendChild(questionHeader);
