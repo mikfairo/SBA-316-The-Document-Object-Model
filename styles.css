@@ -19,6 +19,7 @@ h1 {
   height:25vh;
   width:75vw;
   justify-self: center;
+  justify-items: center;
 }
 img {
   position: fixed;
@@ -28,10 +29,23 @@ img {
   z-index: -1;
   top: 0;
 }
-label {
+#theAnswers {
   color: white;
   font-size: larger;
+  display: flex;
   text-align: center;
-  flex-direction: row;
-  /* position: relative; */
+  justify-content: center;
+  gap: 20px;
+  
+}
+button {
+  display: flex;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: medium;
+  text-align: center;
+  margin-top: 3%;
+}
+button:hover {
+  background-color: rgb(116, 198, 253);
 }
