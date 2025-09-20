@@ -55,6 +55,24 @@ function generatePage() {
       answers: ["String", "Boolean", "Float", "Array"],
       correctAnswer: "Array",
     },
+     {
+      question:
+        "Vodka is commonly made from what vegetable?",
+      answers: ["Sugar Cane", "Barley", "Potato", "Corn"],
+      correctAnswer: "Potato",
+    },
+    {
+      question:
+        "In Greek/Roman mythology what was Athena(Minerva) a god of?",
+      answers: ["Love/Beauty", "Hunt/Wilderness", "Fertility/Harvest", "Wisdom/Warfare"],
+      correctAnswer: "Wisdom/Warfare",
+    },
+    {
+      question:
+        "What president is on the face of the $20 bill?",
+      answers: ["Abraham Lincoln", "Andrew Jackson", "Thomas Jefferson", "John F. Kennedy"],
+      correctAnswer: "Andrew Jackson",
+    },
   ];
 
   function getRandomQuestion() {
@@ -90,6 +108,7 @@ function generatePage() {
   questionCard.appendChild(inputDiv);
 
   const submitButton = document.createElement("button");
+ submitButton.style.fontSize="medium";
   submitButton.textContent = "Submit";
 
   submitButton.addEventListener("click", () => { 
